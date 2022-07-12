@@ -1,5 +1,6 @@
 .header_head {
     width: 100vw;
+    height: 100px;
     background-color: #1473e6;
     display: flex;
     justify-content: space-between;
@@ -58,12 +59,9 @@ li:hover {
 
 }
 
-.section_div {
-    width: 100%;
+.section_first {
     background-image: url("./Image/Rectangle.png");
- background-position: center;
-} 
-
-.section_img {
-    width: 100%;
+    background-size: cover;
+    position: relative;
+    padding-top: 800px;
 }
