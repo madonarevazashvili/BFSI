@@ -1,6 +1,6 @@
 .header_head {
-    width: 100%;
-    background-color: blue;
+    width: 100vw;
+    background-color: #1473e6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,15 +27,17 @@ li {
 
 li:hover {
     color: black;
-    border-radius: 5px;
+
 }
 
 .search {
+
     width: 350px;
     transition: all 2s;
-    background-color: blue;  
+    background-color: #1473e6;
     border: none;
     border-bottom: 2px solid white;
+
 
 }
 
@@ -47,9 +49,21 @@ li:hover {
     width: 20px;
     margin-left: -20px;
     height: 30px;
-    justify-content: flex-end;
 }
-.header_Right{
-    width: 360px;
 
+.header_Right {
+    width: 360px;
+    margin-left: 500px;
+
+
+}
+
+.section_div {
+    width: 100%;
+    background-image: url("./Image/Rectangle.png");
+ background-position: center;
+} 
+
+.section_img {
+    width: 100%;
 }
