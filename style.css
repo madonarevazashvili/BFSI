@@ -1,6 +1,10 @@
+.container {
+    max-width: 1920px;
+    width: 100%;
+}
+
 .header_head {
     width: 100vw;
-    height: 100px;
     background-color: #1473e6;
     display: flex;
     justify-content: space-between;
@@ -19,11 +23,11 @@ nav ul {
 }
 
 li {
-    padding: 30px;
+    padding: 2vw;
 }
 
 .BFSI {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 li:hover {
@@ -33,7 +37,7 @@ li:hover {
 
 .search {
 
-    width: 350px;
+    width: 20vw;
     transition: all 2s;
     background-color: #1473e6;
     border: none;
@@ -47,21 +51,126 @@ li:hover {
 }
 
 .img {
-    width: 20px;
-    margin-left: -20px;
-    height: 30px;
+    width: 10%;
+
 }
 
 .header_Right {
-    width: 360px;
-    margin-left: 500px;
-
+    width: 20vw;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: flex-end;
 
 }
 
 .section_first {
-    background-image: url("./Image/Rectangle.png");
+    width: 100vw;
+    display: flex;
+    background-image: url(./Image/Rectangle.png);
     background-size: cover;
-    position: relative;
-    padding-top: 800px;
+    overflow: hidden;
+    padding: 100px 0px;
+    animation-name: back;
+    animation-delay: 3s;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.section_first_left {
+    background-color: white;
+    width: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+
+
+}
+
+.section_first_h2 {
+    padding: 40px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.label_first {
+
+    margin-top: 20px;
+}
+
+.section_first_btn {
+    margin-top: 20px;
+}
+
+.section_first_right {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_first_h1 {
+    padding: 40px 0px;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.section_first_p {
+    line-height: 25px
+}
+
+.section_first_botton {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: -250%;
+    margin-bottom: -160px;
+}
+
+.section_second {
+    background-color: #ff8b00;
+    width: 100vw;
+}
+
+.section_second_container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.section_second_box1 {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.section_second_img {
+    width: 350px;
+    margin-right: 200px;
+
+}
+
+@keyframes back {
+    0% {
+        background-image: url("./Image/Rectangle.png");
+
+    }
+
+    50% {
+        background-image: url("./Image/20361101.jpg");
+    }
+
+    100% {
+        background-image: url("./Image/istockphoto-1154873007-612x612.jpg")
+    }
 }
