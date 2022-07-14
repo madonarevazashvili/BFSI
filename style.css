@@ -1,17 +1,18 @@
 .container {
     max-width: 1920px;
-    width: 100%;
+    width: 100vw;
+    margin: 0 auto;
 }
 
 .header_head {
-    width: 100vw;
+    width: 100%;
     background-color: #1473e6;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     font-weight: bolder;
-
+    margin: 0 auto;
 }
 
 nav ul {
@@ -23,7 +24,7 @@ nav ul {
 }
 
 li {
-    padding: 2vw;
+    padding: 2%;
 }
 
 .BFSI {
@@ -37,7 +38,7 @@ li:hover {
 
 .search {
 
-    width: 20vw;
+    width: 20%;
     transition: all 2s;
     background-color: #1473e6;
     border: none;
@@ -56,15 +57,15 @@ li:hover {
 }
 
 .header_Right {
-    width: 20vw;
-    margin-left: 5vw;
+    width: 20%;
+
     display: flex;
     justify-content: flex-end;
 
 }
 
 .section_first {
-    width: 100vw;
+    width: 100%;
     display: flex;
     background-image: url(./Image/Rectangle.png);
     background-size: cover;
@@ -133,31 +134,53 @@ li:hover {
 }
 
 .section_second {
-    background-color: #ff8b00;
-    width: 100vw;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ff8c00e7;
 }
 
 .section_second_container {
+    width: 70%;
+    margin: 0 auto;
     display: flex;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    padding-top: 100px;
+}
 
+.section_second_box2 {
+    width: 20%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 150px;
+    gap: 50%;
+}
+
+.section_second_p {
+    width: 300px;
 }
 
 .section_second_box1 {
-    width: 150px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-content: space-around;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .section_second_img {
     width: 350px;
     margin-right: 200px;
 
+}
+
+.section_second_info {
+    width: 20%;
+    margin: 0 auto;
+
+}
+
+
+.section_second_h3 {
+    font-size: 40px;
+    font-weight: bold;
 }
 
 @keyframes back {
