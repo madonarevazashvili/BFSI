@@ -18,6 +18,18 @@ document.addEventListener("keypress", function(){
 })
 section_first_btn.addEventListener("click", function(){
     alert("You have successfully logged in")//შეტყობინებას აგდებს 
-    section_first_inp[0].value=''//ასუფთავებს ინფუთებს
+    section_first_inp[0].value=''//ასუფთავებს ინფუთებს"
     section_first_inp[1].value =''
 })
+let section_second_box1 = document.querySelector(".section_second_box1")
+let Ovala=document.querySelector(".Ovala")
+Ovala.addEventListener("click",function(){
+    let box = document.createElement("div");
+    box.classList.add('box')
+    let p = document.createElement("p");
+    box.appendChild(p)
+    hp.innerHTML = 'R. SEBASTIAN BENNETT was born in New York City and grew up in Southern California. He attended Columbia University' 
+    img.setAttribute("src", )
+    box.appendChild(img)
+} )
+

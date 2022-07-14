@@ -1,6 +1,6 @@
 .container {
     max-width: 1920px;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@ nav ul {
 }
 
 li {
-    padding: 2%;
+    padding: 10%;
 }
 
 .BFSI {
@@ -38,7 +38,7 @@ li:hover {
 
 .search {
 
-    width: 20%;
+    width: 70%;
     transition: all 2s;
     background-color: #1473e6;
     border: none;
@@ -52,13 +52,12 @@ li:hover {
 }
 
 .img {
-    width: 10%;
+    width: 5%;
 
 }
 
 .header_Right {
     width: 20%;
-
     display: flex;
     justify-content: flex-end;
 
@@ -66,6 +65,7 @@ li:hover {
 
 .section_first {
     width: 100%;
+    height: 776px;
     display: flex;
     background-image: url(./Image/Rectangle.png);
     background-size: cover;
@@ -130,57 +130,129 @@ li:hover {
     flex-direction: column;
     justify-content: flex-start;
     margin-left: -250%;
-    margin-bottom: -160px;
+    margin-bottom: -200px;
 }
 
 .section_second {
     width: 100%;
+    height: 1049px;
     margin: 0 auto;
     background-color: #ff8c00e7;
+    display: flex;
+    align-items: center;
+
 }
 
-.section_second_container {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    padding-top: 100px;
-}
-
-.section_second_box2 {
-    width: 20%;
-    display: flex;
-    margin: 0 auto;
-    padding-top: 150px;
-    gap: 50%;
-}
 
 .section_second_p {
     width: 300px;
+
+}
+
+.section_second_container1 {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.section_second_box2 {
+    width: 800px;
+    display: flex;
+    padding: 50px;
+
 }
 
 .section_second_box1 {
+    width: 350px;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0 auto;
+
 }
 
-.section_second_img {
-    width: 350px;
-    margin-right: 200px;
+.section_second_box2_1 {
+    width: 300px;
+    display: flex;
+    gap: 170px;
+}
 
+.section_second_box2_2 {
+    width: 400px;
 }
 
 .section_second_info {
-    width: 20%;
-    margin: 0 auto;
-
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
 }
 
 
 .section_second_h3 {
     font-size: 40px;
     font-weight: bold;
+
+}
+
+.section_second_container2 {
+    width: 300px;
+    display: flex;
+}
+
+.section_second_h1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.section_second_h2 {
+    padding: 20px;
+}
+
+/* .section_second_img {
+    height: 500px;
+} */
+
+.tw {
+    padding: 30px;
+}
+
+.section_third {
+    width: 100%;
+    height: 1049px;
+    background-image: url("./Image/Rectangle\ \(10\).png");
+    margin: 0 auto;
+}
+
+.section_third_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.section_third_h1 {
+    width: 300px;
+    display: flex;
+text-align: center;
+
+}
+
+.section_third_p {
+    display: flex;
+text-align: center;
+}
+
+.third_h1 {
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.third_p {
+    font-size: 20px;
+    color: #333333;
 }
 
 @keyframes back {
