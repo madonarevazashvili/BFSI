@@ -129,8 +129,8 @@ li:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: -250%;
-    margin-bottom: -200px;
+    margin-left: -150%;
+    margin-bottom: -150px;
 }
 
 .section_second {
@@ -221,6 +221,7 @@ li:hover {
     height: 1049px;
     background-image: url("./Image/Rectangle\ \(10\).png");
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .section_third_container {
@@ -250,6 +251,30 @@ li:hover {
     color: #333333;
 }
 
+.section_third_box {
+    display: flex;
+    width: 80%;
+    margin-left: 20%;
+    align-items: flex-end;
+    overflow: hidden;
+    transform: translateX(100vw);
+}
+
+
+.box {
+
+    flex-wrap: wrap;
+
+}
+
+.box_box {
+    width: 100px;
+}
+
+.box_box_p {
+    width: 400px;
+}
+
 @keyframes back {
     0% {
         background-image: url("./Image/Rectangle.png");
@@ -263,4 +288,5 @@ li:hover {
     100% {
         background-image: url("./Image/istockphoto-1154873007-612x612.jpg")
     }
+
 }
