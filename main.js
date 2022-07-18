@@ -21,17 +21,64 @@ section_first_btn.addEventListener("click", function () {
     section_first_inp[0].value = ''
     section_first_inp[1].value = ''
 })
-// let section_second_box1 = document.querySelector(".section_second_box1")
-// let im=document.querySelector(".im")
-// im.addEventListener("click", function myFunction(){
-//     let box = document.createElement("div");
-//     box.classList.add('box')
-//     let p = document.createElement("p");
-//     box.appendChild(p)
-//     hp.innerHTML = 'R. SEBASTIAN BENNETT was born in New York City and grew up in Southern California. He attended Columbia University' 
-//     // img.setAttribute("src", )
-//     // box.appendChild(img)
-// } )
+let section_second_box1 = document.querySelector(".section_second_box1")
+let im = document.querySelector(".im")
+im.addEventListener("click", function () {
+    document.querySelector(".section_second_container2").innerHTML = null
+    let boxs = document.createElement("div");
+    boxs.classList.add('boxs')
+    let p = document.createElement("p");
+    boxs.appendChild(p)
+    let img = document.createElement("img")
+    p.innerHTML = 'R. SEBASTIAN BENNETT was born in New York City and grew up in Southern California. He attended Columbia University'
+    img.setAttribute("src", "./Image/st.png")
+    boxs.appendChild(img)
+    document.querySelector(".section_second_container2").appendChild(boxs)
+
+})
+
+let Ovala = document.querySelector(".Ovala")
+Ovala.addEventListener("click", function () {
+    document.querySelector(".section_second_container2").innerHTML = null
+    let boxs = document.createElement("div");
+    boxs.classList.add('boxs')
+    let p = document.createElement("p");
+    boxs.appendChild(p)
+    let img = document.createElement("img")
+    p.innerHTML = 'R. SEBASTIAN BENNETT was born in New York City and grew up in Southern California. He attended Columbia University'
+    img.setAttribute("src", "./Image/Oval (4).png")
+    boxs.appendChild(img)
+    document.querySelector(".section_second_container2").appendChild(boxs)
+
+})
+let bo = document.querySelector(".bo")
+bo.addEventListener("click", function () {
+    document.querySelector(".section_second_container2").innerHTML = null
+    let boxs = document.createElement("div");
+    boxs.classList.add('boxs')
+    let p = document.createElement("p");
+    boxs.appendChild(p)
+    let img = document.createElement("img")
+    p.innerHTML = 'R. SEBASTIAN BENNETT was born in New York City and grew up in Southern California. He attended Columbia University'
+    img.setAttribute("src", "./Image/bo.png")
+    boxs.appendChild(img)
+    document.querySelector(".section_second_container2").appendChild(boxs)
+
+})
+let Oval = document.querySelector(".Oval")
+Oval.addEventListener("click", function () {
+    document.querySelector(".section_second_container2").innerHTML = null
+    let boxs = document.createElement("div");
+    boxs.classList.add('boxs')
+    let p = document.createElement("p");
+    boxs.appendChild(p)
+    let img = document.createElement("img")
+    p.innerHTML = 'R. SEBASTIAN BENNETT was born in New York City and grew up in Southern California. He attended Columbia University'
+    img.setAttribute("src", "./Image/Oval (9).png")
+    boxs.appendChild(img)
+    document.querySelector(".section_second_container2").appendChild(boxs)
+
+})
 let sectionCardsData = [
     {
         img: './Image/Oval (5).png',
@@ -108,3 +155,45 @@ window.addEventListener('scroll', function () {
     }
 })
 
+let fifth_boxes = document.querySelector(".fifth_boxes")
+let fifth_box = document.querySelector(".fifth_box")
+let button1 = document.querySelector(".bt1")
+let button2 = document.querySelector(".bt2")
+let button3 = document.querySelector(".bt3")
+let fifth_img = document.querySelectorAll(".fifth_img")
+let fifth_h3 = document.querySelectorAll(".fifth_h3")
+let fifth_p = document.querySelectorAll(".fifth_p")
+let fifth_2 = document.querySelectorAll(".fifth_p2")
+let fifth_p_1 = document.querySelectorAll(".fifth_p1")
+let price = document.querySelectorAll(".price")
+let price1 = document.querySelector(".price1")
+let price2 = document.querySelector(".price2")
+console.log()
+button1.addEventListener("click", function () {
+        fifth_h3[0].style.display = "none"
+        fifth_img[0].style.display = "none"
+    price[0].style.display = "none"
+        fifth_p.forEach((item)=>{
+            item.style.display="none"
+        
+        })
+    })
+button2.addEventListener("click", function () {
+    fifth_h3[1].style.display = "none"
+    fifth_img[1].style.display = "none"
+    price1.style.display = "none"
+    fifth_p_1.forEach((item) => {
+        item.style.display = "none"
+
+    })
+})
+button3.addEventListener("click", function () {
+    fifth_h3[2].style.display = "none"
+    fifth_img[2].style.display = "none"
+    price2.style.display = "none"
+    fifth_2.forEach((item) => {
+        item.style.display = "none"
+
+    })
+    fifth_box.style.alignItems="center";
+})
