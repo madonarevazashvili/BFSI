@@ -22,15 +22,15 @@ section_first_btn.addEventListener("click", function () {
     section_first_inp[1].value = ''
 })
 // let section_second_box1 = document.querySelector(".section_second_box1")
-// let Ovala=document.querySelector(".Ovala")
-// Ovala.addEventListener("click",function(){
+// let im=document.querySelector(".im")
+// im.addEventListener("click", function myFunction(){
 //     let box = document.createElement("div");
 //     box.classList.add('box')
 //     let p = document.createElement("p");
 //     box.appendChild(p)
 //     hp.innerHTML = 'R. SEBASTIAN BENNETT was born in New York City and grew up in Southern California. He attended Columbia University' 
-//     img.setAttribute("src", )
-//     box.appendChild(img)
+//     // img.setAttribute("src", )
+//     // box.appendChild(img)
 // } )
 let sectionCardsData = [
     {
@@ -64,19 +64,19 @@ let sectionCardsData = [
         txt3: 'Apple'
     },
     {
-        img: './Image/Oval (4).png',
+        img: './Image/44.png',
         txt1: '"Dicat eripuit accumsan facilisi has cetero argumentum, vel at fugit definitionem integre abhorreant epicurei ferri aperiri pri."',
         txt2: 'Hector Mariano',
         txt3: 'Google'
     },
     {
-        img: './Image/Oval (4).png',
+        img: './Image/40.png',
         txt1: '"His dolorem habemus mandamus et, eius ponderum lorem molestiae ne, esse vulputate definitiones iracundia bonorum graecis convenire assum novum eu."',
         txt2: 'Tiontay Carroll',
         txt3: 'Facebook'
     },
 ]
-// console.log(sectionCardsData)
+
 let section_third_box = document.querySelector(".section_third_box")
 sectionCardsData.map((item) => {
     console.log(item)
@@ -85,7 +85,7 @@ sectionCardsData.map((item) => {
     section_third_box.appendChild(box)
     let box_box_p = document.createElement("div");
     box_box_p.classList.add('box_box_p')
-    box.appendChild(box_box_p)  
+    box.appendChild(box_box_p)
     let p1 = document.createElement("p");
     box.appendChild(p1)
     p1.innerHTML = item.txt1;
@@ -94,7 +94,7 @@ sectionCardsData.map((item) => {
     box.appendChild(img);
     let box_box = document.createElement("div");
     box_box.classList.add('box_box')
-    section_third_box.appendChild(box_box)
+    box.appendChild(box_box)
     let h3 = document.createElement("h3");
     box_box.appendChild(h3)
     h3.innerHTML = item.txt2;
@@ -102,11 +102,9 @@ sectionCardsData.map((item) => {
     box_box.appendChild(h4)
     h4.innerHTML = item.txt3;
 })
-window.addEventListener('scroll', function(){
-
-    if (0 == section_third_box.getBoundingClientRect().y){
-        section_third_box.style.transform='translateX(0vw)'
-        console.log('test')
+window.addEventListener('scroll', function () {
+    if (section_third_box.getBoundingClientRect().y < 1150) {
+        section_third_box.style.transform = 'translateX(0px)';
     }
-    console.log(section_third_box.getBoundingClientRect())
 })
+
